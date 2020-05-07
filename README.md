@@ -29,6 +29,7 @@ You can stop the VM with `multipass stop ltTEST` and restart with `multipass sta
 If you want to delete the image and start again, run `multipass delete ltTEST && multipass purge`.
 
 ---
+### Cloud-init options in libretimeTest.yaml
 
 You may wish to change the below fields as per your location.
 ```
