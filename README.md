@@ -25,6 +25,8 @@ sudo service airtime-celery start
 sudo service airtime_analyzer start
 ```
 
+The IP address of your new VM can be found by running `multipass list`. Copy and paste it into your web browser to access the LibreTime interface.
+
 You can stop the VM with `multipass stop ltTEST` and restart with `multipass start ltTEST`.
 If you want to delete the image and start again, run `multipass delete ltTEST && multipass purge`.
 
