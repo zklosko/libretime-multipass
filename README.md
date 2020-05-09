@@ -17,7 +17,7 @@ multipass shell ltTEST  # to enter VM's shell
 And that's it! At the moment, Multipass isn't patient enough for an automated install, so after you enter the shell for the first time, you will still need to run the install script for LibreTime.
 
 ```
-sudo ./install -fiap
+sudo ./libretime/install -fiap
 
 sudo service airtime-liquidsoap start
 sudo service airtime-playout start
