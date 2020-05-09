@@ -15,7 +15,7 @@ apt_update: true
 apt_upgrade: true
 # runs installer on first boot
 runcmd:
-  - cd / && git clone https://github.com/LibreTime/libretime.git && cd libretime
+  - cd / && git clone https://github.com/LibreTime/libretime.git
   # - sudo ./install -fiap  # not sure if sudo is needed
   # - service airtime-liquidsoap start  # possibly remove
   # - service airtime-playout start
