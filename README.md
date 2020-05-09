@@ -45,5 +45,5 @@ If you are running your forked repo of LibreTime for testing purposes,
 modify the URL on this line:
 ```
 runcmd:
-  - cd / && git clone https://github.com/LibreTime/libretime.git && cd libretime
+  - cd / && git clone https://github.com/LibreTime/libretime.git
 ```
