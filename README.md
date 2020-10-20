@@ -1,12 +1,8 @@
 # libretime-multipass
 
-Ever wanted to test out LibreTime but didn't want to tango with
-Virturalbox, Vagrent, or Docker?
-
-![](https://thumbs.gfycat.com/HauntingDirtyDragon-size_restricted.gif)
-
 Canonical released
-[Multipass](https://multipass.run), a tool for setting up Ubuntu VMs with Cloud-init files in a snap. Multipass is available for Windows and macOS, as well as Linux OSes that support snaps.
+[Multipass](https://multipass.run), a tool for setting up Ubuntu VMs with Cloud-init files in a snap.
+Multipass is available for Windows and macOS, as well as Linux OSes that support snaps.
 
 Similar to Docker, Multipass works through a CLI. To use, clone this repo and then open a Terminal (or Command Prompt) inside the created folder and run
 ```
@@ -14,7 +10,8 @@ multipass launch bionic -n ltTEST --cloud-init libretimeTest.yaml  # to launch V
 multipass shell ltTEST  # to enter VM's shell
 ```
 
-And that's it! At the moment, Multipass isn't patient enough for an automated install, so after you enter the shell for the first time, you will still need to run the install script for LibreTime.
+And that's it! At the moment, Multipass isn't able to do an automated install from the init script,
+so after you enter the shell for the first time, you will still need to run the install script for LibreTime.
 
 ```
 sudo ./libretime/install -fiap
@@ -43,7 +40,5 @@ ntp:
 
 If you are running your forked repo of LibreTime for testing purposes,
 modify the URL on this line:
-```
-runcmd:
-  - cd / && git clone https://github.com/LibreTime/libretime.git
-```
+
+> - cd / && git clone https://github.com/LibreTime/libretime.git
